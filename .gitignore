@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+out-tsc/
+*.tsbuildinfo
+.parcel-cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+# src/config/mapboxConfig.js is committed but token is read from env var on Vercel
+
+# Large data files — host externally, not in git
+*.csv
+*.mp4
+*.shp
+*.shx
+*.dbf
+*.prj
+*.qmd
+1763728612666/
+
+# Large GeoJSON data (too big for Vercel deployment)
+public/De_muni.geojson
+public/De_muni_meta.geojson
+
+
+# Local-only: settings + key file
+.claude/
+src/config/cartoConfig.js
